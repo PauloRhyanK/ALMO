@@ -1,0 +1,22 @@
+body{
+    display: grid;
+    grid-template:   1fr 2fr 4fr / 3fr 6fr ;
+    grid-template-areas: "sidebar title" "sidebar conatiner" "sidebar conatiner" ;
+    background-color: rgb(226, 226, 226);
+}
+
+.lateral{
+    grid-area: sidebar;
+    background-color: white;
+    height: 100%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.abaTitulo{
+    grid-area: title;
+}
+
+.content {
+    grid-area: conatiner;
+}
